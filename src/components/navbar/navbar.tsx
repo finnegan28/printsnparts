@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Link } from 'react-router-dom';
+
 import logo from '../../assets/logo.png';
 
 	const Navbar: React.FC = () => {
@@ -26,10 +29,10 @@ import logo from '../../assets/logo.png';
 
 	const NavLink: React.FC<NavLinkProps> = ({ href, text }) => {
 		return (
-			<a href={href} className="px-4 py-2 hover:text-black">
-				{text}
-			</a>
+		  <Link to={href} className="px-4 py-2 hover:text-black">
+			{text}
+		  </Link>
 		);
-	};
+	  };
 
 	export default Navbar;
