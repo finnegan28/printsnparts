@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 body {
-    background-color: #ffffff;
+    background-color: whitesmoke;
     font-family: "Courier New", monospace;
+}
+
+.nav-link:hover {
+    text-shadow: 0 0 10px violet;
 }
