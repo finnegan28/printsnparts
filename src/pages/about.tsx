@@ -6,15 +6,18 @@ const AboutPage: React.FC = () => {
       <div className="bg-white shadow-md rounded-lg p-6 max-w-3xl w-full">
         <h1 className="text-3xl font-bold text-center mb-4">About Us</h1>
         <p className="text-gray-700 mb-4">
-          Welcome to our 3D printing business! We are passionate about bringing your ideas to life with precision and creativity. Whether you need prototypes, custom parts, or unique designs, we have the expertise and technology to deliver high-quality 3D printed products.
+          My name is Neil, I have been 3d printing for many years now. I have a background in software engineering and I have a huge passion for making things. 
+          <p> 
+          Last year my Audio Technica headphones broke, and I was very reluctant to buy a new pair, after all, I’ve had them for almost 10 years now. I came up with a few solutions and then finally 3d printed a small bracket to repair them.
+          </p>
+          <p>
+          I realized there was a huge need for this type of repair. The build quality of consumer electronics leaves a lot to be desired, and replacement parts are not readily available.
+          </p>
+          <p>
+          Since then, I have been designing and printing a range of different parts from headphones to car repair parts.
+          </p>
+          I want to make an impact and keep your stuff from ending up in landfill by offering a way to easily repair your things!
         </p>
-        <h2 className="text-2xl font-semibold mb-2">Our Services</h2>
-        <ul className="list-disc list-inside mb-4">
-          <li className="text-gray-700">Custom 3D Printing</li>
-          <li className="text-gray-700">Prototyping</li>
-          <li className="text-gray-700">Design Consultation</li>
-          <li className="text-gray-700">Small Batch Production</li>
-        </ul>
       </div>
     </div>
   );

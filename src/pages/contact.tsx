@@ -1,9 +1,8 @@
 import React from 'react';
-import ContactForm from '../components/ContactForm';
 
 const ContactPage: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-6">
+    <div className="flex flex-col items-center justify-center p-6">
       <div className="bg-white shadow-md rounded-lg p-6 max-w-3xl w-full flex flex-col items-center">
         <div className="mb-4 text-center w-full">
           <h1 className="text-3xl font-semibold mb-4">Need some more help?</h1>
@@ -12,7 +11,9 @@ const ContactPage: React.FC = () => {
           </p>
         </div>
         <div className="w-full max-w-md">
-          <ContactForm />
+          <p className="text-xl text-slate-500 p-6 font-bold">
+            Email: <a href="mailto:info@printsandparts.com">info@printsandparts.com</a>
+          </p>
         </div>
       </div>
     </div>
