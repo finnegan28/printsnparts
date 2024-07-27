@@ -11,7 +11,7 @@ const ContactPage: React.FC = () => {
           </p>
         </div>
         <div className="w-full max-w-md">
-          <p className="text-xl text-slate-500 p-6 font-bold">
+          <p className="text-xl text-cyan-700 p-6 font-bold">
             Email: <a href="mailto:info@printsandparts.com">info@printsandparts.com</a>
           </p>
         </div>

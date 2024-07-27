@@ -7,7 +7,7 @@ import ProductFilter from '../components/ProductFilter';
 const ProductsPage = () => {
   const [products, setProducts] = useState<any[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [sortCriteria, setSortCriteria] = useState('title');
+  const [sortCriteria] = useState('title');
   const [sortOrder, setSortOrder] = useState('asc');
   const [categoryFilter, setCategoryFilter] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
@@ -39,11 +39,6 @@ const ProductsPage = () => {
 
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
-  const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setSortCriteria(e.target.value);
-    setCurrentPage(1);
-  };
-
   const handleOrderChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSortOrder(e.target.value);
     setCurrentPage(1);
@@ -67,7 +62,6 @@ const ProductsPage = () => {
         sortOrder={sortOrder}
         categoryFilter={categoryFilter}
         searchQuery={searchQuery}
-        handleSortChange={handleSortChange}
         handleOrderChange={handleOrderChange}
         handleCategoryChange={handleCategoryChange}
         handleSearchChange={handleSearchChange}
