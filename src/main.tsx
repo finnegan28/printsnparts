@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import Navbar from './components/navbar/navbar';
-import ProductsDetails from './components/product/ProductDetails';
 import ProductsPage from './pages/products';
 import ContactPage from './pages/contact';
 import AboutPage from './pages/about';
@@ -17,8 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           <Route path="/" element={<HomePage/>} />
           <Route path="/about" element={<AboutPage />}/>
           <Route path="/products" element={<ProductsPage />} />
-          {/* Example of a nested route */}
-          <Route path="/products/:productId"  element={<ProductsDetails title={''} description={''} colors={[]} />} />
+          {/* <Route path="/products/:productId"  element={<ProductsDetails title={''} description={''} colors={[]} />} /> */}
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
     </BrowserRouter>

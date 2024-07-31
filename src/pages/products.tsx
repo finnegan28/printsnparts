@@ -56,7 +56,7 @@ const ProductsPage = () => {
 
   return (
     <div className="container mx-auto px-56">
-      <h1 className="text-2xl font-bold text-center my-12">Our Products</h1>
+      <h1 className="text-2xl font-bold text-center my-12"></h1>
       <ProductFilter
         sortCriteria={sortCriteria}
         sortOrder={sortOrder}
